@@ -1,0 +1,115 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/*прячем заголовок*/
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*навигация*/
+.page-nav {
+  padding-top: 75px;
+}
+.navigation {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.navigation li {
+  display: inline-block;
+}
+.navigation li:not(:last-child) {
+  margin-right: 104px;
+}
+.navigation li a {
+  font-family: "Playfair Display", regular;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #626262;
+}
+.navigation li a:hover,
+.navigation li a:focus {
+  color:#03a9f4;
+}
+/*основной контент*/
+body {
+  margin: 0;
+  font-family: "Playfair Display", regular;
+}
+.conteiner {
+  width: 900px;
+  margin: 0 auto;
+}
+.content-list {
+  height: 1740px;
+  margin: 99px 0 67px 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+.list-item {
+  width: 420px;
+  display: inline-block;
+}
+.list-item:not(:nth-child(2n)) {
+  margin-right: 60px;
+}
+.article-img {
+  display: block;
+  max-width: 100%;
+}
+.description {
+  text-transform: uppercase;
+  margin: 0px;
+  margin-top: 30px;
+  font-family: "Ubuntu", light, serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #b4ad9e;
+}
+/*стили заголовков*/
+.article-title {
+  margin: 0px;
+  margin-top: 25px;
+  font-family: "Playfair+Display", Regular, medium serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: #626262;
+}
+/*основной текст*/
+.article-content {
+  height: 69px;
+  margin: 33px 0 137px 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+}
+/*кнопка*/
+.button {
+  width: 164px;
+  height: 60px;
+  font-family: "Playfair+Display", Regular, light, serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #626262;
+}
+div {
+  text-align: center;
+}
