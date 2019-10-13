@@ -28,6 +28,7 @@ input[type="radio"].visually-hidden {
 .navigation {
   margin: 0;
   padding: 0;
+  font-size: 0;
   text-align: center;
 }
 .navigation li {
@@ -37,6 +38,7 @@ input[type="radio"].visually-hidden {
   margin-right: 104px;
 }
 .navigation li a {
+  display: block;
   font-family: "Playfair Display", regular;
   font-size: 14px;
   line-height: 24px;
@@ -46,20 +48,29 @@ input[type="radio"].visually-hidden {
 }
 .navigation li a:hover,
 .navigation li a:focus {
-  color:#03a9f4;
+  color: #03a9f4;
 }
 /*основной контент*/
 body {
+  height: auto;
   margin: 0;
-  font-family: "Playfair Display", regular;
+  font-family: "Playfair Display", regular, light;
 }
-.conteiner {
+.header-page {
+  padding-bottom: 99px;
+}
+.content {
+  height: auto;
+  margin: 0;
+}
+.container {
+  height: auto;
   width: 900px;
   margin: 0 auto;
 }
 .content-list {
-  height: 1740px;
-  margin: 99px 0 67px 0;
+  margin: 0;
+  margin-bottom: 50px;
   padding: 0;
   list-style: none;
   font-size: 0;
@@ -67,49 +78,60 @@ body {
 .list-item {
   width: 420px;
   display: inline-block;
+  margin-bottom: 127px;
 }
 .list-item:not(:nth-child(2n)) {
   margin-right: 60px;
 }
+.list-item:not(:nth-child(-n + 2)) {
+  margin-bottom: 60px;
+}
+.list-item:nth-child(n + 5) {
+  margin-bottom: 0;
+}
 .article-img {
   display: block;
   max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
 }
 .description {
   text-transform: uppercase;
-  margin: 0px;
-  margin-top: 30px;
+  margin: 0;
+  margin-bottom: 26px;
   font-family: "Ubuntu", light, serif;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 16px;
   color: #b4ad9e;
 }
 /*стили заголовков*/
 .article-title {
-  margin: 0px;
-  margin-top: 25px;
-  font-family: "Playfair+Display", Regular, medium serif;
+  margin: 0;
+  margin-bottom: 33px;
+  font-family: "Playfair+Display", Regular, light serif;
   font-size: 30px;
+  font-weight: 500;
   line-height: 36px;
   color: #626262;
 }
 /*основной текст*/
 .article-content {
-  height: 69px;
-  margin: 33px 0 137px 0;
   font-size: 14px;
   line-height: 24px;
   color: #626262;
 }
 /*кнопка*/
 .button {
-  width: 164px;
-  height: 60px;
+  display: block;
+  margin: auto;
+  padding: 30px 82px;
+  border: none;
   font-family: "Playfair+Display", Regular, light, serif;
   font-size: 20px;
   line-height: 24px;
   color: #626262;
+  cursor: pointer;
 }
-div {
-  text-align: center;
+.button:hover {
+  color: #03a9f4;
 }
