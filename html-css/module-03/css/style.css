@@ -116,6 +116,7 @@ body {
 }
 /*основной текст*/
 .article-content {
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
   color: #626262;
