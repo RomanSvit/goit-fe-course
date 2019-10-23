@@ -113,11 +113,11 @@ body {
 .f-list-item img {
   display: block;
   max-width: 100%;
-  margin-bottom: -4px;
 }
 .product {
   width: 201px;
   height: 40px;
+  padding-top: 7px;
   padding-left: 14px;
   background-color: #323232;
   color: #ffffff;
@@ -132,6 +132,8 @@ body {
 .price {
   width: 54px;
   height: 40px;
+  padding-top: 7px;
+  padding-left: 12px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 32px;
@@ -140,6 +142,12 @@ body {
   color: #ffffff;
   margin: 0;
   float: right;
+}
+.f-list-item:hover .product{
+  background-color: #1abc9c;
+}
+.f-list-item:hover .price{
+  background-color: #7fd9c7;
 }
 /*section LATEST NEWS*/
 /*news-title*/
@@ -169,14 +177,14 @@ body {
   margin: 0;
   list-style: none;
 }
-.news-list:nth-last-child() {
-  margin-right: 0;
-}
 .news-list-item {
   margin: 0;
   width: 350px;
   float: left;
   margin-right: 30px;
+}
+.news-list-item:nth-child(3) {
+  margin-right: 0;
 }
 .news-list-item img {
   margin-bottom: 11px;
