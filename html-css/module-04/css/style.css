@@ -150,10 +150,12 @@ body {
   margin: 0;
   float: right;
 }
-.f-list-item:hover .product {
+.f-list-item a:hover .product,
+.f-list-item a:focus .product {
   background-color: #1abc9c;
 }
-.f-list-item:hover .price {
+.f-list-item a:hover .price,
+.f-list-item a:focus .price {
   background-color: #7fd9c7;
 }
 /*section LATEST NEWS*/
