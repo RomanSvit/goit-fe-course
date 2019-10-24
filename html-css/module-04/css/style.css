@@ -83,6 +83,7 @@ body {
   color: #515151;
   text-align: center;
   margin: 0;
+  margin-bottom: 92px;
 }
 .features-title::after {
   content: "";
@@ -90,7 +91,7 @@ body {
   width: 164px;
   height: 7px;
   background-color: #1abc9c;
-  margin: 32px auto 92px;
+  margin: 32px auto 0;
 }
 /*features-list*/
 .features-list {
@@ -110,9 +111,15 @@ body {
 .f-list-item:nth-child(4n + 0) {
   margin-right: 0;
 }
+.f-list-item a {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
 .f-list-item img {
   display: block;
   max-width: 100%;
+  margin: 0;
 }
 .product {
   width: 201px;
@@ -143,16 +150,16 @@ body {
   margin: 0;
   float: right;
 }
-.f-list-item:hover .product{
+.f-list-item:hover .product {
   background-color: #1abc9c;
 }
-.f-list-item:hover .price{
+.f-list-item:hover .price {
   background-color: #7fd9c7;
 }
 /*section LATEST NEWS*/
 /*news-title*/
 .news {
-  padding: 0;
+  padding: 0 0 46px;
 }
 .news-title {
   font-family: "Roboto", serif;
@@ -162,6 +169,7 @@ body {
   color: #515151;
   text-align: center;
   margin: 0;
+  margin-bottom: 81px;
 }
 .news-title::after {
   content: "";
@@ -169,7 +177,7 @@ body {
   width: 164px;
   height: 7px;
   background-color: #1abc9c;
-  margin: 32px auto 81px;
+  margin: 32px auto 0;
 }
 /*news-list*/
 .news-list {
@@ -190,7 +198,7 @@ body {
   margin-bottom: 11px;
 }
 .news-list-item-title {
-  margin: 0;
+  margin: 0 0 25px;
   color: #555252;
   font-family: "Open Sans", sans-serif, semibold;
   font-size: 18px;
@@ -206,18 +214,21 @@ body {
   margin-top: 11px;
 }
 .text {
-  width: 336px;
   color: #555252;
   font-family: "OpenSans", regular, sans-serif;
   font-size: 14px;
   line-height: 26px;
   letter-spacing: -0.28px;
+  margin: 0 0 13px;
 }
-.button {
+.Read-More {
   display: block;
-  padding: 18px 44px 20px 42px;
+  width: 162px;
+  margin: 0;
+  padding: 20px 42px 18px 43px;
   border: none;
   border-radius: 2px;
+  text-decoration: none;
   font-family: "OpenSans", light, sans-serif;
   font-size: 16px;
   line-height: 26px;
@@ -225,4 +236,7 @@ body {
   background-color: #4ec6ab;
   color: #ffffff;
   cursor: pointer;
+}
+.Read-More:hover {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
