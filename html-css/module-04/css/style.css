@@ -6,7 +6,7 @@ html {
 *::after {
   box-sizing: inherit;
 }
-body {
+.container{
   width: 1110px;
   height: auto;
   margin: 0 auto;
@@ -240,6 +240,7 @@ body {
   color: #ffffff;
   cursor: pointer;
 }
-.Read-More:hover {
+.Read-More:hover,
+.Read-More:focus {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
