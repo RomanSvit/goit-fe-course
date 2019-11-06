@@ -164,7 +164,7 @@ img{
   font-family: "Roboto",sans-serif,bold;
   font-size: 48px;
   line-height: 32px;
-  letter-spacing: -0.96;
+  letter-spacing: -0.96px;
 }
 .collection-title::after{
   display: block;
