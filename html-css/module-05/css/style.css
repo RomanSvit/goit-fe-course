@@ -8,12 +8,12 @@ html {
   margin: 0;
   padding: 0;
 }
-img{
+img {
   display: block;
   max-width: 100%;
-  height:auto ;
+  height: auto;
 }
-.container{
+.container {
   width: 1110px;
   height: auto;
   margin: 0 auto;
@@ -21,7 +21,7 @@ img{
 .page-header {
   display: block;
   height: auto;
-  padding-top:42px;
+  padding-top: 42px;
   padding-bottom: 32px;
 }
 .clearfix::after {
@@ -38,7 +38,7 @@ img{
   color: #000000;
   font-family: "Roboto", sans-serif, light;
   font-size: 30px;
-  
+
   line-height: 32px;
   letter-spacing: -0.6px;
   text-decoration: none;
@@ -80,35 +80,35 @@ img{
   color: #1abc9c;
 }
 /*Стилизуем секцию Slider*/
-.slider-section{
+.slider-section {
   position: relative;
 }
-.slider-section img{
+.slider-section img {
   width: 100%;
   height: 600px;
   object-fit: cover;
 }
-.slider-section::before{
-  position:absolute;
+.slider-section::before {
+  position: absolute;
   width: 100%;
-  height:600px;
+  height: 600px;
   /* display: block; */
   content: "";
-  background:#323232;
+  background: #323232;
   opacity: 0.65;
 }
-.cont-slider{
+.cont-slider {
   position: absolute;
   left: 50%;
-  top:50%;
-  transform: translate(-50%,-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
-.description{
+.description {
   width: 758px;
   margin: 0 auto;
 }
-.title-slider{
-  font-family: "Roboto",sans-serif;
+.title-slider {
+  font-family: "Roboto", sans-serif;
   font-size: 60px;
   line-height: 82px;
   margin: 0;
@@ -116,15 +116,15 @@ img{
   text-align: center;
   margin-bottom: 12px;
 }
-.slider-text{
+.slider-text {
   margin: 0;
-  font-family: "Roboto",sans-serif,light;
+  font-family: "Roboto", sans-serif, light;
   font-size: 24px;
   line-height: 54px;
   color: #ffffff;
 }
 /*кнопки слайдера*/
-.button{
+.button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -135,155 +135,154 @@ img{
   border: none;
   cursor: pointer;
 }
-.button_slider_left{
+.button_slider_left {
   left: 0;
   background-image: url(../img/slider-content/arrow_left.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-.button_slider_right{
+.button_slider_right {
   right: 0;
   background-image: url(../img/slider-content/arrow_right.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-.button:hover{
-  background-color: rgba(78, 198, 171,.6);
+.button:hover {
+  background-color: rgba(78, 198, 171, 0.6);
 }
 /* Cекция collection */
-.collection{
+.collection {
   background: #e9f0fd;
-  padding-top:100px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 /* заголовок и After */
-.collection-title{
+.collection-title {
   text-align: center;
   margin: 0;
   color: #515151;
-  font-family: "Roboto",sans-serif,bold;
+  font-family: "Roboto", sans-serif, bold;
   font-size: 48px;
   line-height: 32px;
   letter-spacing: -0.96px;
 }
-.collection-title::after{
+.collection-title::after {
   display: block;
   content: "";
-  width:164px;
+  width: 164px;
   height: 8px;
   margin: 32px auto 80px;
   background: #1abc9c;
 }
 /* Карточки и Overlay */
-.card-collection{
+.card-collection {
   list-style: none;
 }
-.collection-img{
+.collection-img {
   width: 255px;
   height: 283px;
 }
-.card-collection-item{
+.card-collection-item {
   position: relative;
   width: 255px;
   float: left;
   margin: 0;
 }
-.card-collection-item:not(:last-child){
+.card-collection-item:not(:last-child) {
   margin-right: 30px;
 }
-.card-collection-item-a{
+.card-collection-item-a {
   display: block;
   margin: 0;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
   line-height: 40px;
   height: 40px;
 }
-.card-collection-item-a:hover .card-name{
-  background-color:#1abc9c;
+.card-collection-item-a:hover .card-name {
+  background-color: #1abc9c;
 }
-.card-collection-item-a:hover .card-price{
-  background-color:#7fd9c7;
+.card-collection-item-a:hover .card-price {
+  background-color: #7fd9c7;
 }
-.card-name{
+.card-name {
   margin: 0;
   width: 201px;
   background-color: #323232;
   float: left;
   padding-left: 8px;
 }
-.card-price{
+.card-price {
   width: 54px;
   margin: 0;
   background-color: #8c8c8c;
   float: left;
   padding-left: 8px;
 }
-.overlay{
+.overlay {
   position: absolute;
   width: 255px;
   height: 283px;
   background-clip: padding-box;
-  border: 10px solid rgba(255, 255, 255,.3);
+  border: 10px solid rgba(255, 255, 255, 0.3);
   /* background-color: rgba(0, 0, 0,.5); */
   visibility: hidden;
-  
 }
-.card-collection-item:hover .overlay{
-  background-color: rgba(0, 0, 0,.5);
-visibility: visible;
+.card-collection-item:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: visible;
 }
 /* Кнопки */
-.box-button{
+.box-button {
   visibility: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-.card-collection-item:hover .box-button{
+.card-collection-item:hover .box-button {
   visibility: visible;
 }
-.all-button{
+.all-button {
   height: 50px;
   border: 1px solid #ffffff;
-  background-color: rgba(0, 0, 0,.5);
+  background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-.buttons_bx{
+.buttons_bx {
   margin-bottom: 7px;
 }
-.overlay-buttons{
+.overlay-buttons {
   width: 50px;
   float: left;
   margin-right: 8px;
 }
-.overlay-buttons:nth-child(1){
+.overlay-buttons:nth-child(1) {
   background-image: url(../img/icon_overlay/Без-имени-1.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-.overlay-buttons:nth-child(2){
+.overlay-buttons:nth-child(2) {
   background-image: url(../img/icon_overlay/arrows.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-.overlay-buttons:nth-child(3){
+.overlay-buttons:nth-child(3) {
   background-image: url(../img/icon_overlay/clock.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-.overlay-buttons:hover{
+.overlay-buttons:hover {
   background-color: #1abc9c;
 }
-.overlay-buttons:last-child{
+.overlay-buttons:last-child {
   margin-right: 0;
 }
-.overlay-button{
+.overlay-button {
   display: block;
   background-color: #323232;
   background-image: url(../img/icon_overlay/truck.png);
@@ -293,27 +292,27 @@ visibility: visible;
   width: 166px;
   color: #ffffff;
   text-transform: uppercase;
-  font-family:"Open Sans",regular;
+  font-family: "Open Sans", regular;
   font-size: 14px;
   letter-spacing: -0.28px;
   padding-left: 46px;
 }
 /* Секция Footer */
-.footer{
+.footer {
   width: 100%;
   height: 88px;
   background-color: #323232;
   padding-top: 38px;
 }
-.footer-text{
+.footer-text {
   margin: 0 auto;
-  font-family: "Opens Sans",sans-serif;
+  font-family: "Opens Sans", sans-serif;
   font-size: 16px;
   color: #ffffff;
   letter-spacing: -0.32px;
   text-align: center;
 }
-.footer-text-link{
+.footer-text-link {
   text-decoration: none;
   color: #46bfa9;
 }
