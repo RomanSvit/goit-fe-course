@@ -38,7 +38,7 @@ img {
   color: #000000;
   font-family: "Roboto", sans-serif, light;
   font-size: 30px;
-
+  font-weight: 100;
   line-height: 32px;
   letter-spacing: -0.6px;
   text-decoration: none;
@@ -93,7 +93,7 @@ img {
   width: 100%;
   height: 100%;
   content: "";
-  background: #323232;
+  background: #000000;
   opacity: 0.65;
 }
 .cont-slider {
@@ -185,24 +185,23 @@ img {
 .card-collection-item {
   position: relative;
   width: 255px;
+  height: 283px;
   float: left;
   margin: 0;
 }
 .card-collection-item:not(:last-child) {
   margin-right: 30px;
 }
-
-.card-collection-item:hover .card-name {
+.active {
+  width: 100%;
+  background-color: #323232;
+}
+.card-collection-item:hover .active {
   background-color: #1abc9c;
 }
-.card-collection-item:hover .card-price {
-  background-color: #7fd9c7;
-}
+
 .card-name {
   margin: 0;
-  width: 201px;
-  height: 40px;
-  background-color: #323232;
   padding-left: 8px;
   float: left;
 }
@@ -215,16 +214,14 @@ img {
   font-weight: 700;
   color: #ffffff;
   line-height: 40px;
-  height: 40px;
-  
 }
 .card-price {
   display: block;
-  width: 54px;
   margin: 0;
-  background-color: #8c8c8c;
+  background-color: rgba(255, 255, 255, 0.44);
   float: right;
   padding-left: 8px;
+  padding-right: 8px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -234,8 +231,8 @@ img {
 }
 .overlay {
   position: absolute;
-  width: 255px;
-  height: 283px;
+  width: 100%;
+  height: 100%;
   background-clip: padding-box;
   border: 10px solid rgba(255, 255, 255, 0.3);
   visibility: hidden;
@@ -312,9 +309,9 @@ img {
 /* Секция Footer */
 .footer {
   width: 100%;
-  height: 88px;
   background-color: #323232;
   padding-top: 38px;
+  padding-bottom: 32px;
 }
 .footer-text {
   margin: 0 auto;
