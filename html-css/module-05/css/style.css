@@ -91,7 +91,7 @@ img {
 .slider-section::before {
   position: absolute;
   width: 100%;
-  height: 600px;
+  height: 100%;
   /* display: block; */
   content: "";
   background: #323232;
@@ -203,26 +203,33 @@ img {
   color: #ffffff;
   line-height: 40px;
   height: 40px;
+  float: left;
 }
-.card-collection-item-a:hover .card-name {
+.card-collection-item:hover .card-name {
   background-color: #1abc9c;
 }
-.card-collection-item-a:hover .card-price {
+.card-collection-item:hover .card-price {
   background-color: #7fd9c7;
 }
 .card-name {
   margin: 0;
   width: 201px;
   background-color: #323232;
-  float: left;
   padding-left: 8px;
 }
 .card-price {
+  display: block;
   width: 54px;
   margin: 0;
   background-color: #8c8c8c;
-  float: left;
+  float: right;
   padding-left: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 40px;
+  height: 40px;
 }
 .overlay {
   position: absolute;
@@ -249,42 +256,41 @@ img {
   visibility: visible;
 }
 .all-button {
+  width: 50px;
   height: 50px;
   border: 1px solid #ffffff;
   background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  float: left;
+  margin-right: 8px;
 }
 .buttons_bx {
   margin-bottom: 7px;
 }
-.overlay-buttons {
-  width: 50px;
-  float: left;
-  margin-right: 8px;
-}
-.overlay-buttons:nth-child(1) {
+.overlay-buttons-heart {
   background-image: url(../img/icon_overlay/Без-имени-1.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-.overlay-buttons:nth-child(2) {
+.overlay-buttons-arrows {
   background-image: url(../img/icon_overlay/arrows.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-.overlay-buttons:nth-child(3) {
+.overlay-buttons-clock {
   background-image: url(../img/icon_overlay/clock.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-.overlay-buttons:hover {
-  border:none;
+.all-button:hover {
+  border: none;
   background-color: #1abc9c;
 }
-.overlay-buttons:last-child {
+.all-button:last-child {
   margin-right: 0;
 }
 .overlay-button {
+  height: 50px;
   display: block;
   background-color: #323232;
   background-image: url(../img/icon_overlay/truck.png);
@@ -299,9 +305,9 @@ img {
   letter-spacing: -0.28px;
   padding-left: 46px;
 }
-.overlay-button:hover{
+.overlay-button:hover {
   background-color: #1abc9c;
-  border:none;
+  border: none;
 }
 /* Секция Footer */
 .footer {
