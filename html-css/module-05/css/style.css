@@ -92,7 +92,6 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  /* display: block; */
   content: "";
   background: #323232;
   opacity: 0.65;
@@ -192,19 +191,7 @@ img {
 .card-collection-item:not(:last-child) {
   margin-right: 30px;
 }
-.card-collection-item-a {
-  display: block;
-  margin: 0;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 40px;
-  height: 40px;
-  float: left;
-}
+
 .card-collection-item:hover .card-name {
   background-color: #1abc9c;
 }
@@ -214,8 +201,22 @@ img {
 .card-name {
   margin: 0;
   width: 201px;
+  height: 40px;
   background-color: #323232;
   padding-left: 8px;
+  float: left;
+}
+.card-collection-item-a {
+  margin: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 40px;
+  height: 40px;
+  
 }
 .card-price {
   display: block;
@@ -237,7 +238,6 @@ img {
   height: 283px;
   background-clip: padding-box;
   border: 10px solid rgba(255, 255, 255, 0.3);
-  /* background-color: rgba(0, 0, 0,.5); */
   visibility: hidden;
 }
 .card-collection-item:hover .overlay {
