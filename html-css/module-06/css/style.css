@@ -53,6 +53,7 @@ img {
   visibility: hidden;
 }
 .nav-menu-item-a {
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
   color: #95e1d3;
@@ -76,6 +77,7 @@ img {
   padding-bottom: 92px;
 }
 .desc {
+  display: block;
   text-align: center;
   margin-bottom: 22px;
   font-family: "Kaushan Script", regular;
@@ -204,8 +206,6 @@ img {
   width: 379px;
 }
 .img-team {
-  width: 100%;
-  height: 470px;
   margin-bottom: 30px;
 }
 .team_item::before {
@@ -251,10 +251,11 @@ img {
   visibility: hidden;
 }
 .box_social_link {
-  font-size: 0;
+  list-style: none;
+  display: flex;
 }
 .social_link {
-  display: inline-block;
+  display: block;
   width: 56px;
   height: 56px;
   background-repeat: no-repeat;
@@ -322,6 +323,9 @@ img {
   color: #f38181;
 }
 /* form!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.form{
+  display: flex;
+}
 .form-input {
   border: 1px solid #e7e7e7;
   border-right: none;
@@ -345,4 +349,5 @@ img {
   color: #ffffff;
   background-color: rgb(149, 225, 211);
   padding: 15px 33px;
+  cursor: pointer;
 }
