@@ -279,7 +279,7 @@ img {
   background-position: center;
 }
 .all-button:hover {
-  border: none;
+  border:none;
   background-color: #1abc9c;
 }
 .all-button:last-child {
@@ -303,7 +303,7 @@ img {
 }
 .overlay-button:hover {
   background-color: #1abc9c;
-  border: none;
+  border:none;
 }
 /* Секция Footer */
 .footer {
