@@ -116,7 +116,7 @@ img {
   margin-bottom: 18px;
   font-family: "Montserrat Bold", sans-serif;
   font-size: 40px;
-  line-height: 75px;
+  line-height: 1.2;
   letter-spacing: -1px;
   color: #222222;
 }
@@ -184,7 +184,7 @@ img {
   text-align: center;
   font-family: "Montserrat Bold", sans-serif;
   font-size: 18px;
-  line-height: 75px;
+  line-height: 1.2;
   letter-spacing: -0.45px;
   color: #222222;
   margin-bottom: 19px;
@@ -193,6 +193,7 @@ img {
   text-align: center;
   font-family: "Roboto Slab";
   font-size: 14px;
+  line-height: 1.5;
   letter-spacing: -0.35px;
   color: #777777;
 }
@@ -287,4 +288,16 @@ img {
   font-weight: 600;
   font-size: 18px;
   color: #ffffff;
+}
+.Title___Marketing_Tools {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  line-height: 4.167;
+  text-align: left;
+  position: absolute;
+  left: 970.875px;
+  top: 476.538px;
+  z-index: 25;
 }
