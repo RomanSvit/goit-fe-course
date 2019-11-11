@@ -142,6 +142,10 @@ margin: 0 auto;
   left:50%;
   transform: translateX(-50%);
   background-image: url(../img/homework-07_03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 3px solid #fed136;
+  border-radius: 50%;
 }
 .web::before{
   width:72px;
@@ -151,7 +155,11 @@ margin: 0 auto;
   top: 0;
   left:50%;
   transform: translateX(-50%);
-  background-image: url(../img/homework-07_05.jpg);
+  background-image: url(../img/homework-07_08.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 3px solid #fed136;
+  border-radius: 50%;
 }
 .security::before{
   width:72px;
@@ -161,7 +169,11 @@ margin: 0 auto;
   top: 0;
   left:50%;
   transform: translateX(-50%);
-  background-image: url(../img/homework-07_07.png);
+  background-image: url(../img/homework-07_05.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 3px solid #fed136;
+  border-radius: 50%;
 }
 .service-item-title{
   text-align: center;
@@ -184,9 +196,10 @@ margin: 0 auto;
 .footer{
   padding-top: 110px;
   padding-bottom: 115px;
-  background-image: url(../img/homework-07_02.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../img/MapImage.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: rgb(34, 34, 34);
 }
 .title-contact-us{
   text-align: center;
