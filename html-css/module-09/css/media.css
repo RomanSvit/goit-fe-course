@@ -50,6 +50,8 @@
    .banner{
      background-image: linear-gradient(rgba(26, 25, 21, 0.1), rgba(26, 25, 21, 0.1)), url(../img/Desktop.png);
    }
-
+.partners-item{
+  padding: 0 20px;
+}
 
 }
