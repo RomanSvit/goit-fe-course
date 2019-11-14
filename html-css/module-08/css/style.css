@@ -170,10 +170,11 @@ img {
 }
 .partners {
   list-style: none;
+  padding: 0 44px;
 }
 .partners-item {
   margin: 0 auto;
-  width: 194px;
+ padding: 0 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
