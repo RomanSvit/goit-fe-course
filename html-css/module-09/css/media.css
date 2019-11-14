@@ -1,7 +1,4 @@
 @media (min-width: 768px){
-  .container{
-    width: 660px;
-  }
   .banner{
     background-image: linear-gradient(rgba(26, 25, 21, 0.1), rgba(26, 25, 21, 0.1)), url(../img/tablet.png);
   }
@@ -50,9 +47,6 @@
    }
 }
 @media (min-width: 992px){
-.container{
-  width: 940px;
-   }
    .banner{
      background-image: linear-gradient(rgba(26, 25, 21, 0.1), rgba(26, 25, 21, 0.1)), url(../img/Desktop.png);
    }
