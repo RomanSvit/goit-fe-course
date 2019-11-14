@@ -48,9 +48,6 @@
    .walker{
      order: -1;
    }
-    .partners-item:nth-of-type(2n+2) {
-    margin-bottom: 60px;
-  } 
 }
 @media (min-width: 992px){
 .container{

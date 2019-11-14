@@ -165,6 +165,7 @@ img {
 }
 .partners {
   list-style: none;
+  margin-bottom: 60px;
 }
 .partners-item {
   padding: 0 48px;
