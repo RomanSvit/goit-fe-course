@@ -57,17 +57,16 @@ img {
   width: 320px;
 }
 .header {
+  padding-top: 20px;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  padding-top: 20px;
 }
 .box-signup {
   display: flex;
   justify-content: center;
   list-style: none;
-  margin-bottom: 116px;
 }
 .link {
   display: block;
@@ -97,6 +96,7 @@ img {
   color: #ffffff;
 }
 .logo-link-down {
+  margin-bottom: 40px;
   display: block;
   text-decoration: none;
   text-align: center;
@@ -106,18 +106,23 @@ img {
   font-size: 20px;
   color: #ffffff;
 }
+.wraper{
+  padding-top: 170px;
+}
 .main-title {
+  text-transform: uppercase;
   margin: 0;
-  padding: 0 10px;
   text-align: center;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
+  font-size: 30px;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 .desc-title {
   text-align: center;
-  padding: 0 44px;
+  padding: 0 10px;
   font-family: "Roboto";
   font-size: 18px;
   font-style: normal;
@@ -128,7 +133,7 @@ img {
 .partner-button {
   display: block;
   margin: 0 auto;
-  width: 280px;
+  padding: 0 40px;
   height: 40px;
   border: solid #ff4e50;
   border-radius: 50px 50px 50px 50px;
@@ -147,9 +152,6 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 /* section-holiday */
 .section-holiday {
@@ -175,6 +177,7 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 .img {
   position: relative;

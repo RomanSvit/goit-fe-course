@@ -2,12 +2,22 @@
   .header {
     padding-top: 38px;
   }
+  .registration{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .container {
     width: 666px;
     margin: 0 auto;
   }
   .banner {
-    background-image: url(../img/tablet_.jpg);
+    background-image: linear-gradient(rgba(26, 25, 21, 0.1), rgba(26, 25, 21,0.2)), url(../img/tablet.png);
+  }
+  .wraper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .logo-link-up {
     display: block;
@@ -29,7 +39,7 @@
   }
   .main-title {
     font-size: 52px;
-    width: 490px;
+    padding: 0 22px;
     margin-bottom: 40px;
   }
   .desc-title {
@@ -57,9 +67,9 @@
   .walker {
     order: -1;
   }
-  .partners-item:nth-of-type(even) {
-    margin-bottom: 40px;
-  }
+  .partners-item:nth-of-type(2n+2) {
+    margin-bottom: 60px;
+  } 
 }
 @media (min-width: 940px) {
   .container {
@@ -73,5 +83,11 @@
   }
   .partners{
     flex-wrap: nowrap;
+  }
+  .main-title{
+    padding: 0 160px;
+  }
+  .wraper{
+    display: block;
   }
 }
