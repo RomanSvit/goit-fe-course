@@ -1,3 +1,40 @@
+/* kaushan-script-regular - latin */
+@font-face {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kaushan Script'), local('KaushanScript-Regular'),
+       url('../fonts/kaushan-script-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/kaushan-script-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 html {
   box-sizing: border-box;
 }
@@ -19,22 +56,33 @@ img {
   margin: 0 auto;
 }
 .header {
-  height: 100vh;
+  height: 100%;
   padding-top: 29px;
-  padding-bottom: 132px;
+  padding-bottom: 256px;
   background-image: linear-gradient(
       to top,
       rgba(252, 227, 138, 0.8),
       rgba(243, 129, 129, 0.8)
     ),
-    url(../img/homework-10_01.png);
+    url(../img/layer.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media(min-resolution:192dpi){
+  .header{
+    background-image: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.8),
+    rgba(243, 129, 129, 0.8)
+  ),
+  url(../img/layer@2x.png);
+  }
 }
 /* section navigation */
 .navigation {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 164px;
 }
 /* logo */
 .logo {
@@ -44,6 +92,8 @@ img {
   font-weight: 800;
   font-size: 30px;
   padding-bottom: 12px;
+  font-family: "Montserrat";
+  font-style: normal;
 }
 /* menu */
 .box-nav {
@@ -70,7 +120,9 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
-  font-family: "Montserrat", regular;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
 }
 .nav-menu-item-a:hover {
@@ -86,6 +138,36 @@ img {
   transition-timing-function: linear;
 }
 .desc-header-title {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+}
+.header-title{
+  margin-bottom: 126px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 150px;
+  color: #ffffff;
+}
+.header-btn{
+  display: block;
+  margin: 0 auto;
+  padding: 12px 30px;
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: transparent;
 }
 /* section-service!!!!!!!!!!!! */
 .section-service {
@@ -100,8 +182,11 @@ img {
   color: #333333;
 }
 .section-title {
+  text-transform: uppercase;
   text-align: center;
-  font-family: "Montserrat", regular;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
   font-size: 30px;
   color: #333333;
 }
@@ -131,15 +216,17 @@ img {
   padding-left: 64px;
 }
 .box-title {
-  font-family: "Montserrat", regular;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
   font-size: 14px;
-  font-weight: 300;
   color: #333333;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 .box-description {
-  font-family: "Roboto", regular;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #999999;
@@ -204,7 +291,9 @@ img {
 }
 .text {
   width: 944px;
-  font-family: "Roboto", regular;
+  font-family: 'Roboto',sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #999999;
@@ -234,8 +323,9 @@ img {
 }
 .employee-name {
   text-align: center;
-  font-family: "Montserrat", regular;
-  font-weight: 500;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
   font-size: 14px;
   color: #333333;
   text-transform: uppercase;
@@ -243,7 +333,7 @@ img {
 }
 .profession {
   text-align: center;
-  font-family: "Roboto";
+  font-family: 'Roboto',sans-serif;
   font-style: italic;
   font-weight: 300;
   font-size: 15px;
@@ -329,7 +419,8 @@ img {
   align-items: center;
 }
 .footer-text {
-  font-family: "Montserrat", regular;
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   color: #333333;
@@ -344,7 +435,8 @@ img {
 .form-input {
   border: 1px solid #e7e7e7;
   border-right: none;
-  font-family: "Roboto";
+  font-family: 'Roboto',sans-serif;
+  font-style: italic;
   font-weight: 300;
   font-size: 15px;
   font-style: italic;
@@ -359,7 +451,9 @@ img {
 .form-button {
   border: none;
   text-transform: uppercase;
-  font-family: "Montserrat", bold;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
   font-size: 14px;
   color: #ffffff;
   background-color: rgb(149, 225, 211);
