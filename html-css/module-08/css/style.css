@@ -106,9 +106,6 @@ img {
   font-size: 20px;
   color: #ffffff;
 }
-.wraper{
-  padding-top: 170px;
-}
 .main-title {
   text-transform: uppercase;
   margin: 0;
@@ -133,7 +130,7 @@ img {
 .partner-button {
   display: block;
   margin: 0 auto;
-  padding: 0 40px;
+  width: 280px;
   height: 40px;
   border: solid #ff4e50;
   border-radius: 50px 50px 50px 50px;
@@ -146,7 +143,7 @@ img {
   cursor: pointer;
 }
 .banner {
-  padding-top: 40px;
+  padding-top: 200px;
   height: 100vh;
   background-image: linear-gradient(rgba(26, 25, 21, 0.1), rgba(26, 25, 21, 0.1)), url(../img/mobile.png);
   background-position: center;
