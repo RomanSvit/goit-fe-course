@@ -1,11 +1,12 @@
 /* kaushan-script-regular - latin */
 @font-face {
-  font-family: 'Kaushan Script';
+  font-family: "Kaushan Script";
   font-style: normal;
   font-weight: 400;
-  src: local('Kaushan Script'), local('KaushanScript-Regular'),
-       url('../fonts/kaushan-script-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/kaushan-script-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Kaushan Script"), local("KaushanScript-Regular"),
+    url("../fonts/kaushan-script-v8-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/kaushan-script-v8-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* montserrat-700 - latin */
 @font-face {
@@ -19,21 +20,23 @@
 }
 /* montserrat-regular - latin */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'),
-       url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-regular - latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'),
-       url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 html {
   box-sizing: border-box;
@@ -66,39 +69,28 @@ img {
     ),
     url(../img/layer.png);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
-@media(min-resolution:192dpi){
-  .header{
-    background-image: linear-gradient(
-    to top,
-    rgba(252, 227, 138, 0.8),
-    rgba(243, 129, 129, 0.8)
-  ),
-  url(../img/layer@2x.png);
-  }
-}
 /* section navigation */
-.navigation {
+.nav {
   display: flex;
   justify-content: space-between;
   margin-bottom: 164px;
 }
 /* logo */
-.logo {
+.nav__logo {
   color: #ffffff;
   text-decoration: none;
-  font-family: "Montserrat", bold;
+  font-family: "Montserrat";
+  font-style: normal;
   font-weight: 800;
   font-size: 30px;
   padding-bottom: 12px;
-  font-family: "Montserrat";
-  font-style: normal;
 }
 /* menu */
-.box-nav {
+.nav__box {
   display: flex;
-  align-items: center;
 }
 .nav-menu {
   display: flex;
@@ -106,6 +98,7 @@ img {
   align-items: flex-end;
   list-style: none;
   min-width: 492px;
+  margin-right: 50px;
 }
 .nav-menu-item-a::after {
   display: block;
@@ -120,7 +113,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -137,8 +130,34 @@ img {
   transition-duration: 0.2s;
   transition-timing-function: linear;
 }
+.nav-vidget {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+.vidget {
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  border: none;
+  cursor: pointer;
+}
+.backet-svg {
+  width: 18px;
+  height: 18px;
+  fill: #ffffff;
+}
+.vidget:hover .backet-svg {
+  fill: #fce38a;
+  transition-property: transform;
+  transform: scale(2);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
 .desc-header-title {
-  font-family: 'Kaushan Script';
+  font-family: "Kaushan Script";
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
@@ -146,7 +165,7 @@ img {
   display: block;
   text-align: center;
 }
-.header-title{
+.header-title {
   margin-bottom: 126px;
   text-align: center;
   text-transform: uppercase;
@@ -156,7 +175,7 @@ img {
   font-size: 150px;
   color: #ffffff;
 }
-.header-btn{
+.header-btn {
   display: block;
   margin: 0 auto;
   padding: 12px 30px;
@@ -168,6 +187,11 @@ img {
   font-size: 14px;
   color: #ffffff;
   background-color: transparent;
+}
+.header-btn:hover {
+  border-color: #fce38a;
+  color: #fce38a;
+  cursor: pointer;
 }
 /* section-service!!!!!!!!!!!! */
 .section-service {
@@ -184,7 +208,7 @@ img {
 .section-title {
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -216,7 +240,7 @@ img {
   padding-left: 64px;
 }
 .box-title {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -225,7 +249,7 @@ img {
   margin-bottom: 20px;
 }
 .box-description {
-  font-family: 'Roboto',sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -291,7 +315,7 @@ img {
 }
 .text {
   width: 944px;
-  font-family: 'Roboto',sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -323,7 +347,7 @@ img {
 }
 .employee-name {
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -333,7 +357,7 @@ img {
 }
 .profession {
   text-align: center;
-  font-family: 'Roboto',sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: italic;
   font-weight: 300;
   font-size: 15px;
@@ -363,21 +387,15 @@ img {
   display: block;
   width: 56px;
   height: 56px;
-  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 74px;
   background-color: rgb(252, 227, 138);
 }
-.facebook {
-  background-image: url(../img/icon_social/facebook.png);
+.icon {
+  display: inline-block;
+  fill: #f38181;
 }
-.twitter {
-  background-image: url(../img/icon_social/twitter.png);
-}
-.pinterest {
-  background-image: url(../img/icon_social/pinterest.png);
-}
-.instagram {
-  background-image: url(../img/icon_social/instagram.png);
-}
+
 .team_item:hover .img-team {
   transition-property: transform;
   transform: translate(-10px, -10px);
@@ -398,9 +416,12 @@ img {
 }
 .social_link:hover {
   transition-property: background-color;
-  background-color: #95e1d3;
+  background-color: #f38181;
   transition-duration: 0.2s;
   transition-timing-function: linear;
+}
+.social_link:hover .icon {
+  fill: #ffffff;
 }
 /* section footer!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .footer {
@@ -419,9 +440,9 @@ img {
   align-items: center;
 }
 .footer-text {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   color: #333333;
 }
@@ -435,7 +456,7 @@ img {
 .form-input {
   border: 1px solid #e7e7e7;
   border-right: none;
-  font-family: 'Roboto',sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: italic;
   font-weight: 300;
   font-size: 15px;
@@ -451,7 +472,7 @@ img {
 .form-button {
   border: none;
   text-transform: uppercase;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -459,4 +480,14 @@ img {
   background-color: rgb(149, 225, 211);
   padding: 15px 33px;
   cursor: pointer;
+}
+@media (min-resolution: 192dpi), (min-resolutio: 2dppx) {
+  .header {
+    background-image: linear-gradient(
+        to top,
+        rgba(252, 227, 138, 0.8),
+        rgba(243, 129, 129, 0.8)
+      ),
+      url(../img/layer@2x.png);
+  }
 }

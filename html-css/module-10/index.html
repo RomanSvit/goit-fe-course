@@ -11,9 +11,9 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="navigation">
-          <a href="" class="logo">MoGo</a>
-          <div class="box-nav">
+        <nav class="nav">
+          <a href="" class="nav__logo">MoGo</a>
+          <div class="nav__box">
             <ul class="nav-menu">
               <li class="nav-menu-item">
                 <a href="#" class="nav-menu-item-a">About</a>
@@ -32,8 +32,16 @@
               </li>
             </ul>
             <div class="nav-vidget">
-              <button class="vidget-backet"></button>
-              <button class="vidget-lens"></button>
+              <button class="vidget backet">
+                <svg class="backet-svg" width="18" height="18">
+                  <use href="./img/svg/sprite1.svg#car"></use>
+                </svg>
+              </button>
+              <button class="vidget lens">
+                <svg class="backet-svg" width="18" height="18">
+                  <use href="./img/svg/sprite1.svg#glass"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </nav>
@@ -45,7 +53,7 @@
     <main>
       <section class="section-service">
         <div class="container">
-            <span class="desc">We work with</span>
+          <span class="desc">We work with</span>
           <h2 class="section-title">
             Amazing Services
           </h2>
@@ -109,9 +117,9 @@
       </section>
       <section class="section-team">
         <div class="container">
-            <span class="desc">Who we are</span> 
+          <span class="desc">Who we are</span>
           <h2 class="section-title">
-           Meet our team
+            Meet our team
           </h2>
           <p class="text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -123,17 +131,45 @@
             <li class="team_item">
               <div class="overlay">
                 <ul class="box_social_link">
-                  <li><a href="#" class="social_link facebook"></a></li>
-                  <li><a href="#" class="social_link twitter"></a></li>
-                  <li><a href="#" class="social_link pinterest"></a></li>
-                  <li><a href="#" class="social_link instagram"></a></li>
+                  <li>
+                    <a href="#" class="social_link">
+                      <svg class="icon facebook" width="25.593" height="25.62">
+                        <use href="./img/svg/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social_link">
+                      <svg class="icon twitter" width="25.593" height="25.62">
+                        <use href="./img/svg/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social_link">
+                      <svg class="icon pinterest" width="25.593" height="25.62">
+                        <use href="./img/svg/sprite.svg#pinterest"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social_link">
+                      <svg class="icon instagram" width="25.593" height="25.62">
+                        <use href="./img/svg/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
                 </ul>
               </div>
               <img
+                srcset="
+                  ./img/team/MatthewDix.png    380w,
+                  ./img/team/MatthewDix@2x.png 760w
+                "
                 src="./img/team/MatthewDix.png"
+                sizes="380px"
                 alt="photo-employee"
                 class="img-team"
-                width="379"
                 height="470"
               />
               <h3 class="employee-name">Matthew Dix</h3>
@@ -141,18 +177,46 @@
             </li>
             <li class="team_item">
               <div class="overlay">
-                <div class="box_social_link">
-                  <a href="#" class="social_link facebook"></a>
-                  <a href="#" class="social_link twitter"></a>
-                  <a href="#" class="social_link pinterest"></a>
-                  <a href="#" class="social_link instagram"></a>
-                </div>
+                <ul class="box_social_link">
+                  <li>
+                    <a href="#" class="social_link">
+                      <svg class="icon facebook" width="25.593" height="25.62">
+                        <use href="./img/svg/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social_link">
+                      <svg class="icon twitter" width="25.593" height="25.62">
+                        <use href="./img/svg/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social_link">
+                      <svg class="icon pinterest" width="25.593" height="25.62">
+                        <use href="./img/svg/sprite.svg#pinterest"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social_link">
+                      <svg class="icon instagram" width="25.593" height="25.62">
+                        <use href="./img/svg/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
               <img
+                srcset="
+                  ./img/team/ChristopherCampbell.png    380w,
+                  ./img/team/ChristopherCampbell@2x.png 760w
+                "
                 src="./img/team/ChristopherCampbell.png"
+                sizes="380px"
                 alt="photo-employee"
                 class="img-team"
-                width="379"
                 height="470"
               />
               <h3 class="employee-name">Christopher Campbell</h3>
@@ -161,17 +225,45 @@
             <li class="team_item">
               <div class="overlay">
                 <ul class="box_social_link">
-                  <li><a href="#" class="social_link facebook"></a></li>
-                  <li><a href="#" class="social_link twitter"></a></li>
-                  <li><a href="#" class="social_link pinterest"></a></li>
-                  <li><a href="#" class="social_link instagram"></a></li>
+                  <li>
+                    <a href="#" class="social_link">
+                      <svg class="icon facebook" width="25.593" height="25.62">
+                        <use href="./img/svg/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social_link">
+                      <svg class="icon twitter" width="25.593" height="25.62">
+                        <use href="./img/svg/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social_link">
+                      <svg class="icon pinterest" width="25.593" height="25.62">
+                        <use href="./img/svg/sprite.svg#pinterest"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social_link">
+                      <svg class="icon instagram" width="25.593" height="25.62">
+                        <use href="./img/svg/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
                 </ul>
               </div>
               <img
+                srcset="
+                  ./img/team/MichaelFertig.png    380w,
+                  ./img/team/MichaelFertig@2x.png 760w
+                "
                 src="./img/team/MichaelFertig.jpg"
+                sizes="380px"
                 alt="photo-employee"
                 class="img-team"
-                width="379"
                 height="470"
               />
               <h3 class="employee-name">Michael Fertig</h3>
