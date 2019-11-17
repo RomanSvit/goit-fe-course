@@ -349,7 +349,7 @@ img {
   width: 33px;
   height: 33px;
   content: "";
-  background-image: url(../img/icon_amazing/BOOK.png);
+  background-image: url(../img/icon_Amazing/BOOK.png);
   background-repeat: no-repeat;
 }
 .home::before {
@@ -582,6 +582,7 @@ img {
   font-style: italic;
   color: #333333;
   padding: 13px;
+  outline: none;
 }
 
 .form-input::-webkit-input-placeholder {
