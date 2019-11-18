@@ -1,0 +1,187 @@
+.header {
+  height: 100%;
+  padding-top: 29px;
+  padding-bottom: 256px;
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(252, 227, 138, 0.8)),
+      to(rgba(243, 129, 129, 0.8))
+    ),
+    url(../images/layer.png);
+  background-image: -o-linear-gradient(
+      bottom,
+      rgba(252, 227, 138, 0.8),
+      rgba(243, 129, 129, 0.8)
+    ),
+    url(../images/layer.png);
+  background-image: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.8),
+      rgba(243, 129, 129, 0.8)
+    ),
+    url(../images/layer.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &__title {
+    margin-bottom: 126px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font-Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 150px;
+    color: $color-text-white;
+    &--desc {
+      font-family: $font-Kaushan;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 72px;
+      color: $color-text-white;
+      display: block;
+      text-align: center;
+    }
+  }
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 30px;
+    border: 2px solid $color-text-white;
+    text-transform: uppercase;
+    font-family: $font-Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: $color-text-white;
+    background-color: transparent;
+    &:hover {
+      border-color: $active-color;
+      color: $active-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 164px;
+  &__logo {
+    color: $color-text-white;
+    text-decoration: none;
+    font-family: $font-Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    padding-bottom: 12px;
+  }
+  &__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  &__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    list-style: none;
+    min-width: 492px;
+    margin-right: 50px;
+  }
+  &__item--a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-text-white;
+    font-family: $font-Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    &::after {
+      display: block;
+      content: "";
+      height: 3px;
+      background-color: $active-color;
+      margin-top: 12px;
+      visibility: hidden;
+    }
+    &:hover {
+      -webkit-transition-property: color;
+      -o-transition-property: color;
+      transition-property: color;
+      color: $active-color;
+      -webkit-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: linear;
+      -o-transition-timing-function: linear;
+      transition-timing-function: linear;
+    }
+    &:hover:after {
+      -webkit-transition-property: visibility;
+      -o-transition-property: visibility;
+      transition-property: visibility;
+      visibility: visible;
+      -webkit-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: linear;
+      -o-transition-timing-function: linear;
+      transition-timing-function: linear;
+    }
+  }
+}
+
+.vidget-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  &__btn {
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+    border: none;
+    cursor: pointer;
+    &:hover .vidget-button__btn--svg {
+      fill: $active-color;
+      -webkit-transition-property: -webkit-transform;
+      transition-property: -webkit-transform;
+      -o-transition-property: transform;
+      transition-property: transform;
+      transition-property: transform, -webkit-transform;
+      -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+      transform: scale(2);
+      -webkit-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: linear;
+      -o-transition-timing-function: linear;
+      transition-timing-function: linear;
+    }
+  }
+  &__btn--svg {
+    width: 18px;
+    height: 18px;
+    fill: $color-text-white;
+  }
+}

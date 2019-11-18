@@ -1,0 +1,164 @@
+.section-team {
+  padding-bottom: 82px;
+  &__text {
+    width: 944px;
+    font-family: $font-Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: $color-text-grey;
+    text-align: center;
+    margin: 0 auto 92px;
+  }
+}
+
+.our-team {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  &__item {
+    position: relative;
+    width: 379px;
+    &:hover .img-team {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+&:hover .overlay {
+  visibility: visible;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  z-index: 1;
+}
+&:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+  }
+  &__item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 470px;
+    background-color: $color-blue;
+    visibility: hidden;
+    opacity: 0;
+  }
+  &__employee-name {
+    text-align: center;
+    font-family: $font-Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: $color-text-black;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  &__profession {
+    text-align: center;
+    font-family: $font-Roboto, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    color: $color-text-grey;
+  }
+}
+
+.img-team {
+  margin-bottom: 30px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 470px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(252, 227, 136, 0.9)),
+    to(rgba(243, 129, 129, 0.9))
+  );
+  background-image: -o-linear-gradient(
+    bottom,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  background-image: linear-gradient(
+    360deg,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  visibility: hidden;
+}
+.list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  &__icon {
+    display: inline-block;
+    fill: $color-new;
+  }
+  &__social-link {
+    display: block;
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    line-height: 74px;
+    background-color: $active-color;
+    &:hover {
+      -webkit-transition-property: background-color;
+      -o-transition-property: background-color;
+      transition-property: background-color;
+      background-color: $color-new;
+      -webkit-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: linear;
+      -o-transition-timing-function: linear;
+      transition-timing-function: linear;
+    }
+    &:hover .list__icon {
+      fill: $color-text-white;
+    }
+  }
+}
