@@ -1,8 +1,7 @@
-let cost = 0;
-const subscription = 'free';
+'use strict';
 
-if (subscription === 'pro') {
-  cost = 100;
-}
-
-console.log(cost); // 0
+const name = 'Shield Generator';
+let price = 1000;
+price = 2000;
+let message = `Выбран -${name}, цена за штуку ${price} кредитов .`;
+console.log(message);
