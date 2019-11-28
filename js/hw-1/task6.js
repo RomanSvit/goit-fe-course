@@ -14,10 +14,18 @@ function task6() {
   // } while (input !== null);
   // console.log(total);
   let total = 0;
-  let input;
+  let inputNumber;
   do {
-    input = prompt('enter number!');
-    inputNumber = parseInt(input);
-    console.log(inputNumber);
-  }
+    inputNumber = prompt('enter number');
+    if (inputNumber === null) {
+      break;
+    }
+    if (!isNaN(inputNumber)) {
+      inputNumber = Number(inputNumber);
+      total += inputNumber;
+    } else {
+      alert('please enter number!!!!');
+    }
+  } while (true)
+  console.log(total);
 }
