@@ -1,4 +1,5 @@
 'use strict';
+function task5(){
 let deliveryIn = prompt('Укажите страну! (Китай, Чили, Австралия, Индия, Ямайка)');
 let country = deliveryIn.toLowerCase();
 let message;
@@ -22,3 +23,4 @@ switch (country) {
     alert('В вашей стране доставка не доступна,пожалуйста укажите страну из списка! (Китай, Чили, Австралия, Индия, Ямайка)')
 }
 console.log(message);
+}

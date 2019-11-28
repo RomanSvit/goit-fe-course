@@ -1,4 +1,5 @@
 'use strict';
+function task4(){
 const credits = 23580;
 const pricePerDroid = 3000;
 const order = prompt('Введите количество дроидов.');
@@ -17,3 +18,4 @@ if (order === null) {
   message = totalPrice;
 } 
 console.log(message);
+}

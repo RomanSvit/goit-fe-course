@@ -1,5 +1,5 @@
 'use strict';
-
+function task2(){
 const total = 100;
 const ordered = 150;
 let isEnough = ordered <= total;
@@ -10,3 +10,4 @@ if(isEnough){
   result = 'На складе недостаточно твоаров!'
 }
 console.log(result);
+}

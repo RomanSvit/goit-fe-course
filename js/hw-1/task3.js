@@ -1,4 +1,5 @@
 'use strict';
+function task3(){
 const value = prompt('Please enter a password!')
 const ADMIN_PASSWORD = 'jqueryismyjam';
 let message;
@@ -10,3 +11,4 @@ if (value === null) {
   message = 'Доступ запрещен, неверный пароль!';
 }
 console.log(message);
+}
