@@ -1,10 +1,10 @@
 'user strict';
 function task1() {
-  let numberElement =
   const logItems = function (array) {
-    for (const arrayItems of array) {
-      console.log(arrayItems);
+    for (let arrayItem of array) {
+      let indexAr = array.indexOf(arrayItem) + 1;
+      console.log(`${indexAr} - ${arrayItem}`);
     }
-
   }
+  logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
 }
