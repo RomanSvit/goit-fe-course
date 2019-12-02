@@ -7,11 +7,11 @@ function task5() {
     { name: 'Захват', price: 1200, quantity: 2 },
   ];
   const getAllPropValues = (arr, prop) => {
-    let value = [];
+    let keysArray = [];
     for (const item of arr) {
-      if (item[prop] !== undefined) { value.push(item[prop]); }
+      if (item[prop] !== undefined) { keysArray.push(item[prop]); }
     }
-    return value;
+    return keysArray;
   }
   console.log(getAllPropValues(products, 'name'));
   console.log(getAllPropValues(products, 'quantity'));
