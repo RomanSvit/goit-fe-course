@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script src="./task1.js" type="text/javascript"></script>
+  <script src="./task2.js" type="text/javascript"></script>
+  <script src="./task3.js" type="text/javascript"></script>
+  <script src="./task4.js" type="text/javascript"></script>
+  <script src="./task5.js" type="text/javascript"></script>
+  <script src="./task6.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    let message = prompt('Введите задачу! (task1...task6)');
+    message2 = message.toLowerCase();
+    switch (message2) {
+      case 'task1':
+        task1();
+        break;
+      case 'task2':
+        task2();
+        break;
+      case 'task3':
+        task3();
+        break;
+      case 'task4':
+        task4();
+        break;
+      case 'task5':
+        task5();
+        break;
+      case 'task6':
+        task6();
+        break;
+      default:
+        alert('Задача не введена или введена  неправильно! Введите правильно задачу - (task1,...task6).')
+    }
+  </script>
+
+</body>
+
+</html>
