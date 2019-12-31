@@ -29,7 +29,7 @@ function onDataReady(data) {
       break;
     default:
       PNotify.alert('Notice me, error!!!');
-  }
+  };
 }
 function renderOneCountry(country) {
   const context = hate(country);
