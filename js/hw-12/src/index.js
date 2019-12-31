@@ -29,7 +29,6 @@ function onDataReady(data) {
       break;
     default:
       PNotify.alert('Notice me, error!!!');
-      PNotify.get().css({"top":"200px"});
   }
 }
 function renderOneCountry(country) {
@@ -48,3 +47,6 @@ function clearOutput() {
   ulList.innerHTML = '';
   wraper.innerHTML = '';
 }
+
+
+
